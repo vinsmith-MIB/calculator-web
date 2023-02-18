@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <span class="calculator">
+          <div class="output">
+            <h1 class="text">0</h1>
+          </div>
+          <div class="buttonLoc">
+            <span>
+              <button class="button" onclick="output('AC', 0)">AC</button>
+              <button class="button" onclick="output('<-', 0)"><-</button>
+              <button class="button" onclick="output('+/-', 0)">+/-</button>
+              <button class="button" onclick="output(':', 0)">:</button>
+            </span>
+            <span>
+              <button class="button" onclick="output('7', 0)">7</button>
+              <button class="button" onclick="output('8', 0)">8</button>
+              <button class="button" onclick="output('9', 0)">9</button>
+              <button class="button" onclick="output('x', 1)">x</button>
+            </span>
+            <span>
+              <button class="button" onclick="output('4', 0)">4</button>
+              <button class="button" onclick="output('5', 0)">5</button>
+              <button class="button" onclick="output('6', 0)">6</button>
+              <button class="button" onclick="output('-', 1)">-</button>
+            </span>
+            <span>
+              <button class="button" onclick="output('1', 0)">1</button>
+              <button class="button" onclick="output('2', 0)">2</button>
+              <button class="button" onclick="output('3', 0)">3</button>
+              <button class="button" onclick="output('+', 1)">+</button>
+            </span>
+            <span>
+              <button class="button" onclick="output('.', 0)">.</button>
+              <button class="button zero" onclick="output('0', 0)">0</button>
+              <button class="button" onclick="output('=', 1)">=</button>
+            </span>
+          </div>
+        </span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

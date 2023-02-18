@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Consolas', Courier, monospace;
+}
+
+.container {
+    background-color: aqua;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    
+}
+
+.wrapper {
+    background-color: tomato;
+    height : 80vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator { 
+    height: inherit;
+    width: 65vh;
+    border-radius: 30px;
+    background-image:  linear-gradient(to bottom ,#dedede , #474747);
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    background-image: linear-gradient(to bottom,#fc8f21,#d16a02);
+    height: 14vh;
+    margin: 15px;
+    border-radius: 30px;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+}
+
+.output .text {
+    margin: 20px;
+    font-size: 45px;
+    color: #dedede;
+}
+
+.buttonLoc {
+    flex: 1;
+    margin : 0 15px 15px 15px;
+    position: relative;
+    display: block;
+    align-items:center;
+    justify-content: center;
+}
+
+.button {
+    height: 18%;
+    width: 18%;
+    margin: 3px;
+    border-style: none;
+    background-image: linear-gradient(to bottom,#fc8f21,#d16a02);
+    border-radius: 50%;
+}
+
+.button.zero {
+    height: 16%;
+    width: 40%;
+    border-radius: 30px;
+}
